@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutchman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="f4c18e810d4f636220fb6d6f775acf48.png">
+   <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black text-white">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-80 border-r border-zinc-800/50 bg-black/50 backdrop-blur-xl p-8 space-y-8 hidden md:block">
+            <!-- Profile -->
+            <div class="text-center space-y-4">
+                <div class="relative w-32 h-32 mx-auto">
+                    <img src="f4c18e810d4f636220fb6d6f775acf48.png"
+                        alt="Profile" class="w-full h-full rounded-full border-2 border-zinc-800/50">
+                    <div
+                        class="absolute bottom-0 right-0 w-8 h-8 bg-zinc-900 rounded-full border-2 border-zinc-800 flex items-center justify-center">
+                          <span class="text-yellow-400">&lt;/&gt;</span> 
+                    </div> 
+
+
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">Yassir</h1>
+                    <h2 class="text-xl text-zinc-400">A Guy who just loves coding and Learning more!</h2>
+                </div>
+
+            </div>
+            <div class="space-y-2 border-l-2 border-zinc-700 pl-4">
+                <h2 class="text-lg font-semibold text-zinc-200 mb-2">Profile Information</h2>
+                <div class="flex items-center gap-2">
+                    <span>👑</span>
+                    <span class="text-grey-400 font-medium">Interest:</span>
+                    <span class="text-zinc-200">Cpp/Cs</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>📄</span>
+                    <span class="text-grey-400 font-medium">Language:</span>
+                    <span class="text-zinc-200">English-Arabic</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>💼</span>
+                    <span class="text-grey-400 font-medium">Project:</span>
+                    <span class="text-zinc-200">My Portfolio Web</span>
+                </div>
+            </div>
+            <!-- Socials -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Socials</h3>
+                <div class="grid grid-cols-2 gap-4">
+                 <a href="https://discord.gg/cSfUKUSuku" target="_blank" 
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://github.com/yassir128" target="_blank"
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block md:hidden">
+            <button id="menu-toggle" class="p-4 bg-accent text-black rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Main Content -->
+        <main class="flex-1 p-12">
+            <!-- Skills Grid -->
+            <section class="mb-24">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Programming Languages -->
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-code text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Languages</div>
+                                <div class="text-zinc-400 text-lg">Programming & Markup</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                           
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                    class="w-4 h-4">Python 
+                            </span>
+                            
+                            
+                           
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <i class="fab fa-html5 text-[#E34F26]"></i>
+                                Html
+                            </span>
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <i class="fab fa-css3-alt text-[#1572B6]"></i>
+                                Css
+                            </span>
+                            
+                          
+                        </div>
+                    </div>
+                    <!-- Frameworks -->
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-layer-group text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Frameworks</div>
+                               
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <i class="fab fa-node-js text-[#339933]"></i>
+                                Node.js
+                            </span>
+                           
+                            
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                                    class="w-4 h-4">
+                                C++
+                            </span>
+                            
+                            
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
+                                    class="w-4 h-4"> C#
+                            </span>
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-tools text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Software</div>
+                                
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                                    class="w-4 h-4">VS Code
+                            </span>
+                           
+                       
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg"
+                                    class="w-4 h-4"> Vs Studio
+                            </span>
+                           
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <i class="fas fa-mouse-pointer text-purple-400"></i>
+                                Cursor
+                            </span>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Others -->
+                <div class="mt-8">
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-plus text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Others</div>
+                                <div class="text-zinc-400 text-lg">Additional Skills</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                    
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <i class="fas fa-database"></i>
+                                SVG 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Currently Learning -->
+                <div class="mt-8">
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-graduation-cap text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Learning</div>
+                                <div class="text-zinc-400 text-lg">Currently Learning</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-black-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg"
+                                    class="w-4 h-4">Microsoft Exel
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+
+   
+            <section>
+                <h2
+                    class="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text mb-12">
+                    Latest Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+           
+                    <div
+                        class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">DUTCH external</h3>
+                        <p class="text-zinc-400 mb-4">The External Cheat Panel Built in C++ Powerful Security and
+                            Good features!  I have Worked
+                            on this Panel Project for 1 months! with UI Customization and many more</p>
+                        <div class="flex gap-4">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1362680985497636885&permissions=8&integration_type=0&scope=bot+applications.commands"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                                   
+                                 <i class="fas fa-code"></i>
+                                View Project
+                               
+                              
+                                                   <img src="https://cdn.discordapp.com/attachments/1370600400432136303/1373390221013680148/image.png?ex=682a3cd1&is=6828eb51&hm=7cb161339118c59360d74a9845a25da12fe69c39504413535a71cad26cdd4e12&" alt="Wave Project" height="300" width="300"style="margin-top: 10px;">
+                                                  
+                               
+                                 
+             
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card -->
+                    <div
+                           class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">DUTCH  INTERNAL</h3>
+                        <p class="text-zinc-400 mb-4">The INTERNAL  Cheat Panel Built in C# Powerful Safaty and
+                            Good features!  I have Worked
+                            on this Panel Project for 4 months! with UI Customization and Fonction Like Aimbot Ia And Esp Function And More...</p>
+                        <div class="flex gap-4">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1362680985497636885&permissions=8&integration_type=0&scope=bot+applications.commands"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                                   
+                                 <i class="fas fa-code"></i>
+                                View Project
+                               
+                              
+                                                   <img src="https://cdn.discordapp.com/attachments/1370600400432136303/1373394534649561231/image.png?ex=682a40d5&is=6828ef55&hm=b15a9d83710fa4bd57853983cdee233e689850ee3744f1f0ce2d8e73e400e02f&" alt="Wave Project" height="300" width="300"style="margin-top: 10px;">
+                                                  
+                               
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
